@@ -1344,3 +1344,26 @@ button.menu__item-link {
     display: flex;
     justify-content: center;
 }
+.pagination__list {
+    display: flex;
+    gap: 16px;
+    margin: 0 24px;
+    align-items: center;
+}
+.pagination__list-num {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--dark-gray-color);
+    display: flex;
+    width: 48px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__list-num--active {
+    color: var(--text-color);
+}
+.pagination__arrow {
+    display: flex;
+    align-items: center;
+}
