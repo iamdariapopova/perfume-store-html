@@ -121,55 +121,20 @@ body {
 body.lock {
     overflow: hidden;
 }
-
 .background-fade {
     position: fixed;
-    height: 0;
+    height: 100%;
     width: 100%;
-    /* background-color: var(--text-color); */
-    /* background: rgba(35, 35, 35, 0); */
+    background-color: var(--text-color);
     z-index: 3;
-    /* transition: 0.3s linear;
-    transition-property: background; */
-    animation-name: fade-reverse;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    transition: 0.3s;
+    transition-property: opacity;
+    pointer-events: none;
+    opacity: 0;
 }
-
 .background-fade.active {
-    width: 100%;
-    height: 100%;
-    /* opacity: 0.5; */
-    /* background: rgba(35, 35, 35, 0.5); */
-    /* backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px); */
-    /* transition: 0.3s linear;
-    transition-property: background; */
-    animation-name: fade;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-}
-/* .background-fade.inactive {
-    height: 100%;
-    background: rgba(35, 35, 35, 0);
-    transition: 0.3s linear;
-    transition-property: background;
-} */
-@keyframes fade {
-    from{
-        background: rgba(35, 35, 35, 0);
-    }
-    to{
-        background: rgba(35, 35, 35, 0.5);
-    }
-}
-@keyframes fade-reverse {
-    from{
-        background: rgba(35, 35, 35, 0.5);
-    }
-    to{
-        background: rgba(35, 35, 35, 0);
-    }
+    opacity: 0.7;
+    pointer-events: all;
 }
 .wrapper {
     display: flex;
