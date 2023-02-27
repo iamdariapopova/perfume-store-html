@@ -82,7 +82,7 @@
                                     <form class="form" action="">
                                         <p class="form__input-label">Наименование позиции</p>
                                         <input type="text" class="form__input menu__search-input" placeholder="Наименование позиции" maxlength="150">
-                                        <p class="form__input-status  negative">Позиций не найдено</p>
+                                        <p class="form__input-status negative">Позиций не найдено</p>
                                     </form>
                                     <button class="button menu__search-button" disabled>Найти</button>
                                 </div>
@@ -382,13 +382,42 @@
                 <div class="container">
                     <h2 class="section-title">Каталог продукции</h2>
                     <div class="catalogue__info">
-                        <select class="catalogue__filter" name="categories">
+                        <!-- <select class="catalogue__filter" name="categories">
                             <option class="catalogue__category" value="All">Весь ассортимент</option>
                             <option class="catalogue__category" value="Female perfume">Ароматы для женщин</option>
                             <option class="catalogue__category" value="Male perfume">Ароматы для мужчин</option>
                             <option class="catalogue__category" value="Unisex perfume">Ароматы унисекс</option>
                             <option class="catalogue__category" value="Cosmetics">Косметика</option>
-                        </select>
+                        </select> -->
+                        <div class="catalogue__filter">
+                            <div class="catalogue__filter-choosen">
+                                <a class="catalogue__filter-choosen-category">Весь ассортимент</a>
+                                <button class="shevron-down">
+                                    <svg class="icon--desktop" width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L12 9L23 1" stroke="#232323" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                </button>
+                                <button class="shevron-up hide">
+                                    <svg class="icon--desktop" width="24" height="10" viewBox="0 0 24 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 9L12 1L1 9" stroke="#C69C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                            
+                        </div>
+                        
+                            <option class="catalogue__category" value="Female perfume">Ароматы для женщин</option>
+                            <option class="catalogue__category" value="Male perfume">Ароматы для мужчин</option>
+                            <option class="catalogue__category" value="Unisex perfume">Ароматы унисекс</option>
+                            <option class="catalogue__category" value="Cosmetics">Косметика</option>
+                        
                         <span class="catalogue__items-number">Позиций / 328</span>
                     </div>
                     <ul class="catalogue__items">
@@ -556,7 +585,7 @@
                                 <a class="pagination__list-num" href="#">5</a>
                             </li>
                             <li class="pagination__list-item">
-                                <span class="pagination__list-num" href="#">...</span>
+                                <span class="pagination__list-num three-dot" href="#">...</span>
                             </li>
                             <li class="pagination__list-item">
                                 <a class="pagination__list-num" href="#">22</a>
