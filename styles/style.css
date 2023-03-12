@@ -408,9 +408,12 @@ body.lock {
     background-color: var(--background-colors);
     color: var(--text-color);
 }
-@media (max-width: 980px) {
+@media (max-width: 1140px) {
     .button {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .button.secondary {
+        font-size: 14px;
     }
 }
 @media (max-width: 720px) {
@@ -427,11 +430,9 @@ body.lock {
 @media (max-width: 480px) {
     .button {
         margin-top: 40px;
-        font-size: 14px;
         border-width: 0.14em;
     }
     .button.secondary {
-        font-size: 14px;
         border-width: 0.14em;
     }
 }
@@ -1989,11 +1990,13 @@ button.menu__item-link {
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-@media (max-width: 840px) {
+@media (max-width: 1140px) {
     .breadcrumbs__link {
         font-size: 14px;
         line-height: 22px;
     }
+}
+@media (max-width: 840px) {
     .breadcrumbs {
         padding-top: 64px;
         padding-bottom: 44px;
@@ -2528,19 +2531,21 @@ button.menu__item-link {
     padding-bottom: 24px;
 }
 .documents__item-text {
-    line-height: 130%;
     padding-bottom: 40px;
 }
-
+@media (max-width: 1140px) {
+    .documents__item-text {
+        font-size: 14px;
+    }
+    .documents__item-subtitle {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
 @media (max-width: 560px) {
     .documents__inner {
         padding-top: 56px;
    }
-    .documents__item-text {
-        line-height: 130%;
-        padding-bottom: 40px;
-        font-size: 14px;
-    }
     .documents__item-subtitle {
         font-size: 16px;
         letter-spacing: 0.02em;
@@ -2564,6 +2569,9 @@ button.menu__item-link {
     .documents__item-text {
         line-height: 135%;
         font-size: 12px;
+    }
+    .documents__item-subtitle {
+        font-size: 14px;
     }
 }
 @media (max-width: 340px) {
