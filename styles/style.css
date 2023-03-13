@@ -415,6 +415,10 @@ body.lock {
     .button.secondary {
         font-size: 14px;
     }
+    .button,
+    .button.secondary {
+        margin-top: 40px;
+    }
 }
 @media (max-width: 720px) {
     .button {
@@ -428,10 +432,7 @@ body.lock {
     }
 }
 @media (max-width: 480px) {
-    .button {
-        margin-top: 40px;
-        border-width: 0.14em;
-    }
+    .button,
     .button.secondary {
         border-width: 0.14em;
     }
@@ -2363,31 +2364,28 @@ button.menu__item-link {
     justify-content: center;
     transition: 0.2s;
 }
-.pop-up__product {
+.popup__product {
     overflow-y: auto;
     padding-right: 16px;
     scrollbar-color: var(--inactive-element) transparent;
     scrollbar-width: thin;
     height: 100%;
 }
-
 .close-btn:hover svg path, .close-btn:active svg path,
 .share-btn:hover svg path, .share-btn:active svg path {
     stroke: var(--accent-color)
 }
-
-.pop-up__product .product-item__image {
+.popup__product .product-item__image {
     margin-top: 32px;
     margin-bottom: 0;
-    display: flex;
 }
-.pop-up__product .product-item__img {
+.popup__product .product-item__img {
     object-fit: cover;
     object-position: center;
     width: 100%;
     max-width: 400px;
 }
-.pop-up__product .product-item:hover {
+.popup__product .product-item:hover {
     transform: none;
 }
 .popup__inner-btn {
@@ -2399,7 +2397,7 @@ button.menu__item-link {
 .product-item__grid {
     display: grid;
     grid-template-columns: 112px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 18px 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 16px;
     margin: 32px 0;
@@ -2410,39 +2408,41 @@ button.menu__item-link {
     font-family: var(--accent-font);
     font-weight: 300;
     letter-spacing: 0.04em;
+    line-height: 120%;
 }
-.pop-up__product .product-item:hover .product-item__type,
-.pop-up__product .product-item:hover .product-item__title,
-.pop-up__product .product-item:hover .product-item__analogue,
-.pop-up__product .product-item:hover .product-item__volume,
-.pop-up__product .product-item:active .product-item__type,
-.pop-up__product .product-item:active .product-item__title,
-.pop-up__product .product-item:active .product-item__analogue,
-.pop-up__product .product-item:active .product-item__volume {
+.popup__product .product-item:hover .product-item__type,
+.popup__product .product-item:hover .product-item__title,
+.popup__product .product-item:hover .product-item__analogue,
+.popup__product .product-item:hover .product-item__volume,
+.popup__product .product-item:active .product-item__type,
+.popup__product .product-item:active .product-item__title,
+.popup__product .product-item:active .product-item__analogue,
+.popup__product .product-item:active .product-item__volume {
     color: var(--text-color);
 }
-.pop-up__product .product-item__type {
+.popup__product .product-item__type {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 16px;
 }
-.pop-up__product .product-item__title {
+.popup__product .product-item__title {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 0px;
     overflow: visible;
-    display: inline-block;
+    width: 100%;
 }
-.pop-up__product .product-item__analogue {
+.popup__product .product-item__analogue {
     font-size: 20px;
     letter-spacing: 0.02em;
     font-weight: 400;
     overflow: visible;
     display: inline-block;
 }
-.pop-up__product .product-item__volume,
+.popup__product .product-item__volume,
 .product-item__category {
     font-size: 16px;
+    line-height: 120%;
     font-weight: 500;
     letter-spacing: 0.04em;
     margin-top: 0;
@@ -2456,25 +2456,32 @@ button.menu__item-link {
     font-weight: 400;
     padding-right: 8px;
 }
-.test {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
 
 @media (max-width: 1440px) {
     .popup__inner {
         max-width: 40%;
-        padding: 24px 48px;
+        padding: 24px 40px;
+    }
+    .popup__product .product-item__img {
+        max-width: 344px;
+    }
+    .popup__product .product-item__title {
+        font-size: 20px;
+    }
+    .popup__product .product-item__analogue {
+        font-size: 16px;
+    }
+    .product-item__description {
+        font-size: 14px;
     }
 }
 @media (max-width: 1140px) {
     .popup__inner {
-        /* max-width: 60%; */
-        padding: 16px 32px;
+        padding: 16px 24px;
     } 
-    .pop-up__product .product-item__type {
+    .popup__product .product-item__type {
         margin-bottom: 12px;
+        font-size: 14px;
     }
     .product-item__grid {
         grid-column-gap: 20px;
@@ -2483,36 +2490,154 @@ button.menu__item-link {
     }
     .product-item__description {
         margin-top: 12px;
+        line-height: 130%;
     }
-
+    .popup__product .product-item__img {
+        max-width: 300px;
+    }
+    .popup__product .product-item__volume,
+    .product-item__category,
+    .product-item__grid-title,
+    .product-item__description-title {
+        font-size: 14px;
+        letter-spacing: 0.04em;
+    }
+    .product-item__grid {
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+    .popup__inner-btn {
+        margin-top: 40px;
+    }
+    .popup__buttons {
+        margin-bottom: 40px;
+    }
+    .popup__product .product-item__image {
+        margin-top: 24px;
+    }
 }
-
 @media (max-width: 980px) {
     .popup__inner {
         max-width: 60%;
-        padding: 16px 24px;
-       
     }
 }
 @media (max-width: 720px) {
     .popup__inner {
-        max-width: 70%;
-        padding: 16px 24px; 
+        max-width: 70%; 
     }
 }
 @media (max-width: 640px) {
     .popup__inner {
-        max-width: 80%;
-        padding: 16px 24px; 
+        max-width: 80%; 
     }
 }
-
 @media (max-width: 560px) {
     .popup {
         background-color: var(--background-color);
     }
     .popup .container {
         padding: 0 24px;
+    }
+    .popup__inner {
+        max-width: 100%;
+        padding: 24px 0;
+    }
+    .popup__product {
+        scrollbar-width: none;
+         padding-right: 0px; /*надо подумать, что тут делать с сафари, он отказывается убирать скролл */
+    }
+    .popup__product::-webkit-scrollbar {
+        width: 0px;    
+    }
+    .popup__product .product-item__img {
+        max-width: 100%;
+    }
+    .popup__inner-btn {
+        margin-top: 24px;
+    }
+    .popup__product .product-item__title {
+        font-size: 18px;
+    }
+    .popup__product .product-item__analogue {
+        font-size: 14px;
+    }
+    .product-item__description {
+        font-size: 14px;
+        font-weight: 300;
+        padding-right: 0;
+    }
+    .product-item__grid {
+        grid-column-gap: 12px;
+        grid-row-gap: 8px;
+        grid-template-columns: 96px 1fr;
+        grid-template-rows: 16px 1fr;
+        margin: 24px 0;
+    }
+}
+@media (max-width: 480px) {
+    .popup__product .product-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .popup__product .product-item__info {
+        margin-top: 0;
+    }
+}
+@media (max-width: 380px) {
+    .popup .container {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 340px), (max-height: 480px) and (orientation: landscape) {
+    .popup__product .product-item__type {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .product-item__grid-title,
+    .popup__product .product-item__volume,
+    .product-item__category,
+    .product-item__description-title {
+        font-size: 12px;
+    }
+    .popup__inner-btn {
+        margin-top: 20px;
+        min-height: 40px;
+    }
+    .popup__inner {
+        padding: 16px 0;
+    }
+    .popup__buttons {
+        margin-bottom: 24px;
+    }
+    .product-item__grid {
+        margin: 20px 0;
+    }
+    .product-item__grid {
+        margin: 16px 0;
+    }
+    .product-item__description {
+        margin-top: 8px;
+        font-size: 11px;
+    }
+    .popup__product .product-item__title {
+        font-size: 14px;
+    }
+    .popup__product .product-item__analogue {
+        font-size: 12px;
+    }
+    .popup__product .product-item__image {
+        margin-top: 16px;
+    }
+}
+@media (max-height: 480px) and (orientation: landscape) {
+    .icon--desktop {
+        display: none;
+    }
+    .icon--mobile {
+        display: flex;
+    }
+    .popup__inner{
+        padding: 16px 24px;
     }
 }
 
@@ -2578,4 +2703,16 @@ button.menu__item-link {
     .documents__item-subtitle {
         font-size: 14px;
     }
+}
+
+/* Стиль секшн-тайтла не подцепился почему-то */
+@media (max-width: 560px) {
+    .news__content .section-title {
+        margin-bottom: -37px;
+    } /* В версии Рейзора меняется марджин у блока свайпера */
+}
+@media (max-width: 480px) {
+    .news__content .section-title {
+        margin-bottom: -36px;
+    } /* В версии Рейзора меняется марджин у блока свайпера */
 }
