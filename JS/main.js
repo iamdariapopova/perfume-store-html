@@ -22,7 +22,7 @@ new Swiper('.swiper', {
     speed: 500,
     
     breakpoints: {
-    300: {
+    279: {
         slidesPerView: 1,
         spaceBetween: 24,
     },
