@@ -37,6 +37,8 @@
                                 <svg class="header__tab-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
                                 </svg>
+                                <p class="basket-button__items">21</p>
+                                    
                                 <svg class="header__tab-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>                                    
@@ -78,7 +80,7 @@
                                     <form class="form" action="">
                                         <p class="form__input-label">Наименование позиции</p>
                                         <input type="text" class="form__input menu__search-input" placeholder="Наименование позиции" maxlength="150">
-                                        <p class="form__input-status negative">Позиций не найдено</p>
+                                        <p class="form__input-status  negative">Позиций не найдено</p>
                                     </form>
                                     <button class="button menu__search-button" disabled>Найти</button>
                                 </div>
@@ -104,9 +106,11 @@
                         <a class="button" href="#">Перейти в каталог</a>
                     </div>
                 </div>
-                <div class="basket__inner">
-                    <h3 class="division-title">Корзина / 21 шт.</h3>
-                    <ul class="basket__items">
+                <div class="basket__inner order">
+                   
+                    
+
+                    <ul class="basket__items basket__items--noscroll-desktop">
                         <li class="product-item inbasket">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
@@ -251,7 +255,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="product-item inbasket">
+                        <!-- <li class="product-item inbasket">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -298,8 +302,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="product-item inbasket">
+                        </li> -->
+                        <!-- <li class="product-item inbasket">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -345,7 +349,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="basket__items-mobile">
                         <li class="product-item inbasket">
@@ -534,262 +538,44 @@
             </div>
         </div>
 
-        <main class="main">
-            <div class="breadcrumbs">
-                <div class="container">
-                  <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                      <a class="breadcrumbs__link" href="#">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <span class="breadcrumbs__link" href="#">Каталог продукции</span>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <span class="breadcrumbs__link" href="#">Весь ассортимент</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-        
-            <div class="catalogue">
-                <div class="container">
-                    <h2 class="section-title">Каталог продукции</h2>
-                    <div class="catalogue__info">
-                        <div class="dropdown-list opened">
-                            <div class="dropdown-list__main-category">
-                                <a class="menu__item-link">Весь ассортимент</a>
-                                <div class="dropdown-list__shevron">
-                                    <button class="shevron-down">
-                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg> 
-                                    </button>
-                                    <button class="shevron-up hide">
-                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                
-                            </div>
-                            <div class="dropdown-list__wrapper">
-                                <ul class="dropdown-list__categories">
-                                    <li class="dropdown-list__category checked">
-                                        <a class="menu__item-link " href="#">Весь ассортимент</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы для женщин</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы для мужчин</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы унисекс</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Косметика</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            
+        <section class="popup confirm">
+            <div class="container">
+                <div class="popup__inner">
+                        <div class="popup__buttons">
+                            <button class="share-btn invisible">
+                                <svg class="icon--desktop" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.625 20.25L24.375 16.5M17.625 22.125L24.375 25.5M41 21C41 32.0457 32.0457 41 21 41C9.9543 41 1 32.0457 1 21C1 9.9543 9.9543 1 21 1C32.0457 1 41 9.9543 41 21ZM17.625 21C17.625 22.2426 16.6176 23.25 15.375 23.25C14.1324 23.25 13.125 22.2426 13.125 21C13.125 19.7574 14.1324 18.75 15.375 18.75C16.6176 18.75 17.625 19.7574 17.625 21ZM28.875 15.75C28.875 16.9926 27.8676 18 26.625 18C25.3824 18 24.375 16.9926 24.375 15.75C24.375 14.5074 25.3824 13.5 26.625 13.5C27.8676 13.5 28.875 14.5074 28.875 15.75ZM28.875 26.25C28.875 27.4926 27.8676 28.5 26.625 28.5C25.3824 28.5 24.375 27.4926 24.375 26.25C24.375 25.0074 25.3824 24 26.625 24C27.8676 24 28.875 25.0074 28.875 26.25Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </svg>
+                                <svg class="icon--mobile" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.3 16.4L19.7 13.4M14.3 17.9L19.7 20.6M33 17C33 25.8366 25.8366 33 17 33C8.16344 33 1 25.8366 1 17C1 8.16344 8.16344 1 17 1C25.8366 1 33 8.16344 33 17ZM14.3 17C14.3 17.9941 13.4941 18.8 12.5 18.8C11.5059 18.8 10.7 17.9941 10.7 17C10.7 16.0059 11.5059 15.2 12.5 15.2C13.4941 15.2 14.3 16.0059 14.3 17ZM23.3 12.8C23.3 13.7941 22.4941 14.6 21.5 14.6C20.5059 14.6 19.7 13.7941 19.7 12.8C19.7 11.8059 20.5059 11 21.5 11C22.4941 11 23.3 11.8059 23.3 12.8ZM23.3 21.2C23.3 22.1941 22.4941 23 21.5 23C20.5059 23 19.7 22.1941 19.7 21.2C19.7 20.2059 20.5059 19.4 21.5 19.4C22.4941 19.4 23.3 20.2059 23.3 21.2Z" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                            <button class="close-btn">
+                                <svg class="icon--desktop" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M41 21C41 32.0457 32.0457 41 21 41C9.9543 41 1 32.0457 1 21C1 9.9543 9.9543 1 21 1C32.0457 1 41 9.9543 41 21Z" fill="#F5F5F5" fill-opacity="0.6"/>
+                                <path d="M15 15L27 27M15 27L27 15M41 21C41 32.0457 32.0457 41 21 41C9.9543 41 1 32.0457 1 21C1 9.9543 9.9543 1 21 1C32.0457 1 41 9.9543 41 21Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
+                                </svg>
+                                <svg class="icon--mobile" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 13L21 21M13 21L21 13M33 17C33 25.8366 25.8366 33 17 33C8.16344 33 1 25.8366 1 17C1 8.16344 8.16344 1 17 1C25.8366 1 33 8.16344 33 17Z" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                </svg>  
+                            </button>
                         </div>
-                        
-                        <p class="catalogue__items-number">Позиций / 328</p>
-                    </div>
-                    <ul class="catalogue__items">
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                        <div class="popup__confirming">
+                            <h3 class="division-title">Благодарим за заказ!</h3>
+                            <p class="popup__text">
+                                Ждите звонка на указанный номер телефона, 
+                                чтобы подтвердить заказ и выбрать условия оплаты
+                                и доставки.
+                            </p>
+                        </div>
+
+                        <button class="button popup__inner-btn">Хорошо</button>
                 </div>
             </div>
-            <div class="pagination">
-                <div class="container">
-                    <div class="pagination__inner">
-                        <a class="pagination__arrow pagination__arrow--disabled" href="#">
-                            <svg class="icon--desktop" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32 21.9C32.4971 21.9 32.9 21.4971 32.9 21C32.9 20.5029 32.4971 20.1 32 20.1V21.9ZM10 21L9.39459 20.3341C9.20697 20.5046 9.1 20.7464 9.1 21C9.1 21.2536 9.20697 21.4954 9.39459 21.6659L10 21ZM16.1054 16.6659C16.4732 16.3316 16.5003 15.7624 16.1659 15.3946C15.8316 15.0268 15.2624 14.9997 14.8946 15.3341L16.1054 16.6659ZM14.8946 26.6659C15.2624 27.0003 15.8316 26.9732 16.1659 26.6054C16.5003 26.2376 16.4732 25.6684 16.1054 25.3341L14.8946 26.6659ZM32 20.1L10 20.1V21.9L32 21.9V20.1ZM10.6054 21.6659L16.1054 16.6659L14.8946 15.3341L9.39459 20.3341L10.6054 21.6659ZM9.39459 21.6659L14.8946 26.6659L16.1054 25.3341L10.6054 20.3341L9.39459 21.6659ZM1.9 21C1.9 10.4514 10.4514 1.9 21 1.9V0.0999985C9.45725 0.0999985 0.1 9.45725 0.1 21H1.9ZM21 1.9C31.5486 1.9 40.1 10.4514 40.1 21H41.9C41.9 9.45725 32.5428 0.0999985 21 0.0999985V1.9ZM40.1 21C40.1 31.5486 31.5486 40.1 21 40.1V41.9C32.5428 41.9 41.9 32.5428 41.9 21H40.1ZM21 40.1C10.4514 40.1 1.9 31.5486 1.9 21H0.1C0.1 32.5428 9.45725 41.9 21 41.9V40.1Z" fill="#232323"/>
-                            </svg>
-                            <svg class="icon--mobile" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M25 17L9 17L25 17ZM9 17L13 13L9 17ZM9 17L13 21L9 17Z" fill="#F5F5F5"/>
-                                <path d="M25 17L9 17M9 17L13 13M9 17L13 21M17 1C25.8366 1 33 8.16344 33 17C33 25.8366 25.8366 33 17 33C8.16344 33 1 25.8366 1 17C1 8.16344 8.16344 1 17 1Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <ul class="pagination__list">
-                            <li class="pagination__list-item">
-                                <span class="pagination__list-num pagination__list-num--active">1</span>
-                            </li>
-                            <li class="pagination__list-item">
-                                <a class="pagination__list-num" href="#">2</a>
-                            </li>
-                            <!-- <li class="pagination__list-item">
-                                <a class="pagination__list-num" href="#">3</a>
-                            </li> -->
-                            <!-- <li class="pagination__list-item">
-                                <a class="pagination__list-num" href="#">4</a>
-                            </li>
-                            <li class="pagination__list-item">
-                                <a class="pagination__list-num" href="#">5</a>
-                            </li> -->
-                            <li class="pagination__list-item">
-                                <span class="pagination__list-num three-dot" href="#">...</span>
-                            </li>
-                            <li class="pagination__list-item">
-                                <a class="pagination__list-num" href="#">22</a>
-                            </li>
-                        </ul>
-                        <a class="pagination__arrow" href="#">
-                            <svg class="icon--desktop" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 20.1C9.50294 20.1 9.1 20.5029 9.1 21C9.1 21.4971 9.50294 21.9 10 21.9V20.1ZM32 21L32.6054 21.6659C32.793 21.4954 32.9 21.2536 32.9 21C32.9 20.7464 32.793 20.5046 32.6054 20.3341L32 21ZM25.8946 25.3341C25.5268 25.6684 25.4997 26.2376 25.8341 26.6054C26.1684 26.9732 26.7376 27.0003 27.1054 26.6659L25.8946 25.3341ZM27.1054 15.3341C26.7376 14.9997 26.1684 15.0268 25.8341 15.3946C25.4997 15.7624 25.5268 16.3316 25.8946 16.6659L27.1054 15.3341ZM10 21.9L32 21.9V20.1L10 20.1V21.9ZM31.3946 20.3341L25.8946 25.3341L27.1054 26.6659L32.6054 21.6659L31.3946 20.3341ZM32.6054 20.3341L27.1054 15.3341L25.8946 16.6659L31.3946 21.6659L32.6054 20.3341ZM40.1 21C40.1 31.5486 31.5486 40.1 21 40.1V41.9C32.5428 41.9 41.9 32.5428 41.9 21H40.1ZM21 40.1C10.4514 40.1 1.9 31.5486 1.9 21H0.0999985C0.0999985 32.5428 9.45725 41.9 21 41.9V40.1ZM1.9 21C1.9 10.4514 10.4514 1.9 21 1.9V0.1C9.45725 0.1 0.0999985 9.45725 0.0999985 21H1.9ZM21 1.9C31.5486 1.9 40.1 10.4514 40.1 21H41.9C41.9 9.45725 32.5428 0.1 21 0.1V1.9Z" fill="#232323"/>
-                            </svg>
-                            <svg class="icon--mobile" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 17H25ZM25 17L21 21ZM25 17L21 13Z" fill="#F5F5F5"/>
-                                <path d="M9 17H25M25 17L21 21M25 17L21 13M17 33C8.16344 33 1 25.8366 1 17C1 8.16344 8.16344 1 17 1C25.8366 1 33 8.16344 33 17C33 25.8366 25.8366 33 17 33Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                                
-                        </a>
-                    </div> 
-                </div>
-            </div>
-          </div>
+          </section>
+
+        <main class="main">
         </main>
         
         <footer class="footer" id="contacts">
