@@ -30,7 +30,7 @@ new Swiper('.swiper', {
         slidesPerView: 2,
         spaceBetween: 24,
     },
-    1141: {
+    1441: {
         spaceBetween: 40,
         slidesPerView: 2,
     }
