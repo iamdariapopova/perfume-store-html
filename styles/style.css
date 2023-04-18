@@ -1678,7 +1678,7 @@ button.menu__item-link {
     padding: 48px 0;
     z-index: 4;
     transition: transform linear 0.5s;
-    transform: translateY(0%);
+    transform: translateY(-200%);
     background-color: var(--background-color);
     overflow-y: auto;
     scrollbar-width: none;
@@ -2712,6 +2712,15 @@ button.menu__item-link {
     position: absolute;
     width: 100%;
     height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .2s;
+    transform: translateX(-10%);
+}
+.popup.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
 }
 .popup .container {
     display: flex;
@@ -2733,7 +2742,11 @@ button.menu__item-link {
     flex-direction: column;
     position: relative;
     padding: 24px 48px;
+    /* transform: translateX(-100%); */
 }
+/* .active .popup__inner {
+    transform: translateX(0%);
+} */
 .popup__buttons {
     display: flex;
     justify-content: space-between;
@@ -2918,6 +2931,8 @@ button.menu__item-link {
 @media (max-width: 560px) {
     .popup {
         background-color: var(--background-color);
+        transition: all linear .4s;
+        transform: translateX(-100%);
     }
     .popup .container {
         padding: 0 24px;
@@ -2928,10 +2943,10 @@ button.menu__item-link {
     }
     .popup__product {
         scrollbar-width: none;
-         padding-right: 0px; /*надо подумать, что тут делать с сафари, он отказывается убирать скролл */
+        padding-right: 0px;
     }
     .popup__product::-webkit-scrollbar {
-        width: 0px;    
+        display: none;
     }
     .popup__product .product-item__img {
         max-width: 100%;
