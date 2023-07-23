@@ -12,30 +12,34 @@ new Swiper('.swiper', {
       nextEl: '.news__arrows-forward',
       prevEl: '.news__arrows-back',
     },
+
     slidesPerView: 2,
     spaceBetween: 40,
 
     autoplay: {
         delay: 8000,
-        // stopOnLastSlide: true,
     },
+
     speed: 500,
     
     breakpoints: {
     279: {
         slidesPerView: 1,
-        spaceBetween: 24,
+        spaceBetween: 24
     },
     841: {
         slidesPerView: 2,
-        spaceBetween: 24,
+        spaceBetween: 24
     },
     1441: {
-        spaceBetween: 40,
         slidesPerView: 2,
+        spaceBetween: 40
     }
     },
 
+    slidesPerView: 2,
+    spaceBetween: 40,
+    
   });
 
 menuButton.addEventListener('click', () => {

@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="background-fade"></div>
+        <div class="background-fade active"></div>
         <header class="header">
                 <div class="container">
                     <div class="header__inner">
@@ -47,58 +47,12 @@
                     </div>
                 </div>
         </header>
-        <div class="menu">
+        <div class="basket active order">
             <div class="container">
-                <div class="menu__inner">
-                    <nav class="menu__body">
-                        <h3 class="division-title">Меню</h3>
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#allProducts">Весь ассортимент</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы для женщин</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы для мужчин</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы унисекс</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#cosmetics">Косметика</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#contacts">Контакты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link inactive" href="#documents">Документы сайта</a>
-                            </li>
-                            <li class="menu__item">
-                                <button class="menu__item-link">Поиск</button>
-                                <div class="menu__search hide">
-                                    <form class="form" action="">
-                                        <p class="form__input-label">Наименование позиции</p>
-                                        <input type="text" class="form__input menu__search-input" placeholder="Наименование позиции" maxlength="150">
-                                        <p class="form__input-status  negative">Позиций не найдено</p>
-                                    </form>
-                                    <button class="button menu__search-button" disabled>Найти</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="menu__decor">
-                        <img class="menu__decor-img menu__decor-img--desktop" src="./images/header-menu-decor-1.jpg" alt="Изображение">
-                        <img class="menu__decor-img" src="./images/header-menu-decor-3.jpg" alt="Изображение">
-                    </div>                                   
-                </div>
-            </div>
-        </div>
-        <div class="basket">
-            <div class="container">
-                    <div class="basket__inner--empty">
+                    <div class="basket__inner--empty hide">
                         <div class="basket__decor">
-                            <img class="basket__decor-img" src="./images/basket-decor.jpg" alt="Изображение">
+                            <img class="basket__decor-img" src="./images/IMG_4977-8s.jpg" alt="Изображение">
+                            <img class="basket__decor-img" src="./images/IMG_4977-8sc.jpg" alt="Изображение">
                         </div>
                         <div class="basket__info">
                             <h3 class="division-title">Корзина пуста</h3>
@@ -106,7 +60,7 @@
                             <a class="button" href="#">Перейти в каталог</a>
                         </div>
                     </div>
-                    <div class="basket__inner order">
+                    <div class="basket__inner">
                         <div class="basket__inner-top">
                             <button class="back-btn">
                                 <svg class="icon--desktop" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +123,7 @@
                                 <h4 class="subtitle">Ваш заказ: 21 шт.</h4>
                                 <div class="basket__items-list-wrapper">
                                     <ul class="basket__items-list">
-                                        <li class="product-item inbasket column-grid">
+                                        <li class="product-item inbasket">
                                             <div class="product-item__image">
                                                 <a class="product-item-link" href="#">
                                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -243,8 +197,8 @@
                                                     </button>
                                                     <p class="actual-amount-mobile">/ 7</p>
                                                 </div>
-                                                <div class="item-change--mobile-wrapper">
-                                                    <div class="item-change--mobile edit-news">
+                                                <div class="item-change--mobile-wrapper active">
+                                                    <div class="item-change--mobile">
                                                         <div class="item-change__top">
                                                             <div class="edit-mobile">
                                                                 <button class="button-icon">
@@ -279,7 +233,7 @@
                                                                 <p class="actual-amount">7</p>
                                                                 <div class="plus">
                                                                     <button class="button-icon" disabled>
-                                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>    
@@ -292,7 +246,7 @@
                                                 </div>                    
                                             </div>
                                         </li>         
-                                        <li class="product-item inbasket column-grid">
+                                        <li class="product-item inbasket">
                                             <div class="product-item__image">
                                                 <a class="product-item-link" href="#">
                                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -366,8 +320,8 @@
                                                     </button>
                                                     <p class="actual-amount-mobile">/ 7</p>
                                                 </div>
-                                                <div class="item-change--mobile-wrapper">
-                                                    <div class="item-change--mobile edit-news">
+                                                <div class="item-change--mobile-wrapper active">
+                                                    <div class="item-change--mobile">
                                                         <div class="item-change__top">
                                                             <div class="edit-mobile">
                                                                 <button class="button-icon">
@@ -402,7 +356,7 @@
                                                                 <p class="actual-amount">7</p>
                                                                 <div class="plus">
                                                                     <button class="button-icon" disabled>
-                                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>    
@@ -415,7 +369,7 @@
                                                 </div>                    
                                             </div>
                                         </li>
-                                        <li class="product-item inbasket column-grid">
+                                        <li class="product-item inbasket">
                                             <div class="product-item__image">
                                                 <a class="product-item-link" href="#">
                                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -490,7 +444,7 @@
                                                     <p class="actual-amount-mobile">/ 7</p>
                                                 </div>
                                                 <div class="item-change--mobile-wrapper">
-                                                    <div class="item-change--mobile edit-news">
+                                                    <div class="item-change--mobile">
                                                         <div class="item-change__top">
                                                             <div class="edit-mobile">
                                                                 <button class="button-icon">
@@ -525,7 +479,7 @@
                                                                 <p class="actual-amount">7</p>
                                                                 <div class="plus">
                                                                     <button class="button-icon" disabled>
-                                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>    
@@ -538,7 +492,7 @@
                                                 </div>                    
                                             </div>
                                         </li>
-                                        <li class="product-item inbasket column-grid">
+                                        <li class="product-item inbasket">
                                             <div class="product-item__image">
                                                 <a class="product-item-link" href="#">
                                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -613,7 +567,7 @@
                                                     <p class="actual-amount-mobile">/ 7</p>
                                                 </div>
                                                 <div class="item-change--mobile-wrapper">
-                                                    <div class="item-change--mobile edit-news">
+                                                    <div class="item-change--mobile">
                                                         <div class="item-change__top">
                                                             <div class="edit-mobile">
                                                                 <button class="button-icon">
@@ -648,10 +602,10 @@
                                                                 <p class="actual-amount">7</p>
                                                                 <div class="plus">
                                                                     <button class="button-icon" disabled>
-                                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                        </svg>    
+                                                                        </svg>   
                                                                     </button>
                                                                 </div>
                                                             </div>
@@ -661,7 +615,7 @@
                                                 </div>                    
                                             </div>
                                         </li>
-                                        <li class="product-item inbasket column-grid">
+                                        <li class="product-item inbasket">
                                             <div class="product-item__image">
                                                 <a class="product-item-link" href="#">
                                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -736,7 +690,7 @@
                                                     <p class="actual-amount-mobile">/ 7</p>
                                                 </div>
                                                 <div class="item-change--mobile-wrapper">
-                                                    <div class="item-change--mobile edit-news">
+                                                    <div class="item-change--mobile">
                                                         <div class="item-change__top">
                                                             <div class="edit-mobile">
                                                                 <button class="button-icon">
@@ -771,7 +725,7 @@
                                                                 <p class="actual-amount">7</p>
                                                                 <div class="plus">
                                                                     <button class="button-icon" disabled>
-                                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                                         </svg>    
@@ -792,10 +746,10 @@
                         
                         <div class="basket__buttons">
                             <div class="basket__buttons-inner">
-                                <a class="button" href="#">Оформить заказ</a>
                                 <a class="button secondary" href="#">Назад в каталог</a>
+                                <a class="button" href="#">Оформить заказ</a>
                             </div>
-                            <p class="privacy-agreement">Нажимая на кнопку «Оформить заказ», я принимаю <a class="privacy-agreement__link" href="#">соглашение <br> пользователя</a> и <a class="privacy-agreement__link" href="#">политику конфиденциальности сайта</a>
+                            <p class="privacy-agreement">Нажимая на кнопку «Оформить заказ», я принимаю <br> <a class="privacy-agreement__link" href="https://ragroupekb.ru/documents/">политику конфиденциальности</a> сайта
                             </p>
                         </div>
                     </div>

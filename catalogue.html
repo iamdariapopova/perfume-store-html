@@ -45,58 +45,13 @@
                     </div>
                 </div>
         </header>
-        <div class="menu">
-            <div class="container">
-                <div class="menu__inner">
-                    <nav class="menu__body">
-                        <h3 class="division-title">Меню</h3>
-                        <ul class="menu__items">
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#allProducts">Весь ассортимент</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы для женщин</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы для мужчин</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#">Ароматы унисекс</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#cosmetics">Косметика</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link" href="#contacts">Контакты</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__item-link inactive" href="#documents">Документы сайта</a>
-                            </li>
-                            <li class="menu__item">
-                                <button class="menu__item-link">Поиск</button>
-                                <div class="menu__search">
-                                    <form class="form" action="">
-                                        <p class="form__input-label">Наименование позиции</p>
-                                        <input type="text" class="form__input menu__search-input" placeholder="Наименование позиции" maxlength="150">
-                                        <p class="form__input-status negative">Позиций не найдено</p>
-                                    </form>
-                                    <button class="button menu__search-button" disabled>Найти</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="menu__decor">
-                        <img class="menu__decor-img menu__decor-img--desktop" src="./images/header-menu-decor-1.jpg" alt="Изображение">
-                        <img class="menu__decor-img" src="./images/header-menu-decor-3.jpg" alt="Изображение">
-                    </div>                                   
-                </div>
-            </div>
-        </div>
-        <div class="basket">
+
+        <div class="basket active empty">
             <div class="container">
                 <div class="basket__inner--empty">
                     <div class="basket__decor">
-                        <img class="basket__decor-img" src="./images/basket-decor.jpg" alt="Изображение">
+                        <img class="basket__decor-img" src="./images/IMG_4977-8s.jpg" alt="Изображение">
+                        <img class="basket__decor-img" src="./images/IMG_4977-8sc.jpg" alt="Изображение">
                     </div>
                     <div class="basket__info">
                         <h3 class="division-title">Корзина пуста</h3>
@@ -104,10 +59,79 @@
                         <a class="button" href="#">Перейти в каталог</a>
                     </div>
                 </div>
-                <div class="basket__inner">
-                    <h3 class="division-title">Корзина / 21 шт.</h3>
-                    <ul class="basket__items">
-                        <li class="product-item inbasket column-grid">
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                      <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                      <span class="breadcrumbs__link" href="#">Каталог продукции</span>
+                    </li>
+                    <li class="breadcrumbs__item">
+                      <span class="breadcrumbs__link" href="#">Весь ассортимент</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        
+            <div class="catalogue">
+                <div class="container">
+                    <h2 class="section-title">Каталог продукции</h2>
+                    <div class="catalogue__info">
+                        <div class="dropdown-list">
+                            <div class="dropdown-list__main-category">
+                                <a class="menu__item-link">Весь ассортимент</a>
+                                <div class="dropdown-list__shevron">
+                                    <button class="shevron-down">
+                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg> 
+                                    </button>
+                                    <button class="shevron-up hide">
+                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                            <div class="dropdown-list__wrapper">
+                                <ul class="dropdown-list__categories">
+                                    <li class="dropdown-list__category checked">
+                                        <a class="menu__item-link " href="#">Весь ассортимент</a>
+                                    </li>
+                                    <li class="dropdown-list__category">
+                                        <a class="menu__item-link" href="#">Ароматы для женщин</a>
+                                    </li>
+                                    <li class="dropdown-list__category">
+                                        <a class="menu__item-link" href="#">Ароматы для мужчин</a>
+                                    </li>
+                                    <li class="dropdown-list__category">
+                                        <a class="menu__item-link" href="#">Ароматы унисекс</a>
+                                    </li>
+                                    <li class="dropdown-list__category">
+                                        <a class="menu__item-link" href="#">Косметика</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                        <p class="catalogue__items-number">Позиций / 328</p>
+                    </div>
+                    <ul class="catalogue__items">
+                        <li class="product-item inCatalogueSale">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -166,14 +190,8 @@
                                         <button class="button-icon">
                                             <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
-                                                <mask id="path-2-inside-1_2435_15" fill="white">
-                                                <path d="M8.5459 9.94434C8.5459 9.39205 8.99361 8.94434 9.5459 8.94434H18.455C19.0073 8.94434 19.455 9.39205 19.455 9.94434V17.5443C19.455 19.2012 18.1118 20.5443 16.455 20.5443H11.5459C9.88904 20.5443 8.5459 19.2012 8.5459 17.5443V9.94434Z"/>
-                                                </mask>
-                                                <path d="M8.5459 9.94434C8.5459 9.39205 8.99361 8.94434 9.5459 8.94434H18.455C19.0073 8.94434 19.455 9.39205 19.455 9.94434V17.5443C19.455 19.2012 18.1118 20.5443 16.455 20.5443H11.5459C9.88904 20.5443 8.5459 19.2012 8.5459 17.5443V9.94434Z" stroke="#232323" stroke-width="2.8" mask="url(#path-2-inside-1_2435_15)"/>
-                                                <path d="M8 8.94502C7.6134 8.94502 7.3 9.25842 7.3 9.64502C7.3 10.0316 7.6134 10.345 8 10.345V8.94502ZM8 10.345H10V8.94502H8V10.345Z" fill="#232323"/>
-                                                <path d="M18 9.64502H20" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
-                                                <path d="M16.5 9V8C16.5 7.44772 16.0523 7 15.5 7H14H12.5C11.9477 7 11.5 7.44772 11.5 8V9" stroke="#232323" stroke-width="1.4"/>
-                                            </svg>                                                 
+                                                <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                            </svg>                                          
                                         </button>
                                     </div>
                                 </div>
@@ -188,7 +206,7 @@
                                     <p class="actual-amount-mobile">/ 7</p>
                                 </div>
                                 <div class="item-change--mobile-wrapper">
-                                    <div class="item-change--mobile edit-news">
+                                    <div class="item-change--mobile">
                                         <div class="item-change__top">
                                             <div class="edit-mobile">
                                                 <button class="button-icon">
@@ -204,13 +222,7 @@
                                                 <button class="button-icon">
                                                     <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
-                                                        <mask id="path-2-inside-1_2512_3" fill="white">
-                                                        <path d="M8.5459 9.94434C8.5459 9.39205 8.99361 8.94434 9.5459 8.94434H18.455C19.0073 8.94434 19.455 9.39205 19.455 9.94434V17.5443C19.455 19.2012 18.1118 20.5443 16.455 20.5443H11.5459C9.88904 20.5443 8.5459 19.2012 8.5459 17.5443V9.94434Z"/>
-                                                        </mask>
-                                                        <path d="M8.5459 9.94434C8.5459 9.39205 8.99361 8.94434 9.5459 8.94434H18.455C19.0073 8.94434 19.455 9.39205 19.455 9.94434V17.5443C19.455 19.2012 18.1118 20.5443 16.455 20.5443H11.5459C9.88904 20.5443 8.5459 19.2012 8.5459 17.5443V9.94434Z" stroke="#232323" stroke-width="2.8" mask="url(#path-2-inside-1_2512_3)"/>
-                                                        <path d="M8 8.94502C7.6134 8.94502 7.3 9.25842 7.3 9.64502C7.3 10.0316 7.6134 10.345 8 10.345V8.94502ZM8 10.345H10V8.94502H8V10.345Z" fill="#232323"/>
-                                                        <path d="M18 9.64502H20" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
-                                                        <path d="M16.5 9V8C16.5 7.44772 16.0523 7 15.5 7H14H12.5C11.9477 7 11.5 7.44772 11.5 8V9" stroke="#232323" stroke-width="1.4"/>
+                                                        <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
                                                     </svg>
                                                         Удалить
                                                 </button>
@@ -226,10 +238,10 @@
                                                         </svg>    
                                                     </button>
                                                 </div>
-                                                <p class="actual-amount">7</p>
+                                                <p class="actual-amount">100</p>
                                                 <div class="plus">
                                                     <button class="button-icon" disabled>
-                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
                                                             <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                         </svg>    
@@ -241,8 +253,8 @@
                                     </div>
                                 </div>                    
                             </div>
-                        </li>                
-                        <li class="product-item inbasket">
+                        </li>
+                        <li class="product-item inCatalogueSale">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -252,109 +264,31 @@
                                 <div class="product-item__info">
                                     <a class="product-item-link" href="#">
                                         <p class="product-item__type">Духи</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor</h6>
+                                        <h6 class="product-item__title">Rochalur R12</h6>
                                         <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur adipisicing elit Mollitia aliquid</p>
                                         <p class="product-item__volume">50 мл</p>
                                     </a> 
-                                    <!-- <p class="product-item__amount">Осталось 3 шт.</p> -->
-                                </div>
-                                <div class="product-item__change">
-                                    <div class="change-amount">
-                                        <div class="minus">
-                                            <button class="button-icon">
-                                                <svg class="minus-icon"
-                                                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
-                                                    <path d="M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <p class="actual-amount">10</p>
-                                        <div class="plus">
-                                            <button class="button-icon">
-                                                <svg class="plus-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
-                                                    <path d="M20 15V25M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="delete">
-                                        <button class="button-icon">
-                                            <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.79883 9.7998L18.1988 18.1998M9.79883 18.1998L18.1988 9.7998" stroke="#939393" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <circle cx="14" cy="14" r="13.3" stroke="#939393" stroke-width="1.4"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
                                     <p class="product-item__amount">Осталось 3 шт.</p>
                                 </div>
-                                <div class="product-item__change">
-                                    <div class="change-amount">
-                                        <div class="minus">
-                                            <button class="button-icon">
-                                                <svg class="minus-icon"
-                                                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
-                                                    <path d="M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <p class="actual-amount">100</p>
-                                        <div class="plus">
-                                            <button class="button-icon" disabled>
-                                                <svg class="plus-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
-                                                    <path d="M20 15V25M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="delete">
+                                <div class="product-item__tobasket">
+                                    <button class="tobasket-button">
+                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
+                                        </svg>
+                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                                <div class="item-change--desktop">
+                                    <div class="edit">
                                         <button class="button-icon">
-                                            <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.79883 9.7998L18.1988 18.1998M9.79883 18.1998L18.1988 9.7998" stroke="#939393" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <circle cx="14" cy="14" r="13.3" stroke="#939393" stroke-width="1.4"/>
-                                            </svg>
+                                            <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" fill="#F5F5F5" fill-opacity="0.4" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M14.94 11.7L9 17.575L9 19.8H11.1233L17.1 13.86M14.94 11.7L17.602 9C18.5552 9.91494 18.8646 10.2219 19.8 11.1501L17.1 13.86M14.94 11.7L17.1 13.86" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
                                         </button>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Духи</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">50 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change">
                                     <div class="change-amount">
                                         <div class="minus">
                                             <button class="button-icon">
@@ -378,15 +312,72 @@
                                     <div class="delete">
                                         <button class="button-icon">
                                             <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.79883 9.7998L18.1988 18.1998M9.79883 18.1998L18.1988 9.7998" stroke="#939393" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <circle cx="14" cy="14" r="13.3" stroke="#939393" stroke-width="1.4"/>
-                                            </svg>
+                                                <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                            </svg>                                          
                                         </button>
                                     </div>
                                 </div>
+                                <div class="item-change--mobile-link">
+                                    <button class="triple-btn">
+                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
+                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
+                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
+                                        </svg>    
+                                    </button>
+                                    <p class="actual-amount-mobile">/ 7</p>
+                                </div>
+                                <div class="item-change--mobile-wrapper">
+                                    <div class="item-change--mobile">
+                                        <div class="item-change__top">
+                                            <div class="edit-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="14" cy="14" r="13.25" stroke="#232323" stroke-width="1.5"/>
+                                                    <path d="M14.56 11.2L8.40002 17.2926V19.6H10.602L16.8 13.44M14.56 11.2L17.3206 8.40002C18.3091 9.34885 18.6299 9.66718 19.6 10.6297L16.8 13.44M14.56 11.2L16.8 13.44" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>Редактировать
+                                                </button>
+                                            </div>
+                                        </div>
+                                       <div class="item-change__bottom">
+                                            <div class="delete-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                        <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                                    </svg>
+                                                        Удалить
+                                                </button>
+                                            </div>
+                                            <div class="divider--vertical"></div>
+                                            <div class="change-amount">
+                                                <div class="minus">
+                                                    <button class="button-icon">
+                                                        <svg class="minus-icon"
+                                                        width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M11 16H21" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                                <p class="actual-amount">100</p>
+                                                <div class="plus">
+                                                    <button class="button-icon" disabled>
+                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>                    
                             </div>
                         </li>
-                        <li class="product-item inbasket">
+                        <li class="product-item inCatalogueSale">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
                                     <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
@@ -396,17 +387,36 @@
                                 <div class="product-item__info">
                                     <a class="product-item-link" href="#">
                                         <p class="product-item__type">Духи</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
+                                        <h6 class="product-item__title">Rochalur R12</h6>
+                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur adipisicing elit Mollitia aliquid</p>
                                         <p class="product-item__volume">50 мл</p>
                                     </a> 
                                     <p class="product-item__amount">Осталось 3 шт.</p>
                                 </div>
-                                <div class="product-item__change">
+                                <div class="product-item__tobasket">
+                                    <button class="tobasket-button">
+                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
+                                        </svg>
+                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+                                <div class="item-change--desktop">
+                                    <div class="edit">
+                                        <button class="button-icon">
+                                            <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" fill="#F5F5F5" fill-opacity="0.4" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M14.94 11.7L9 17.575L9 19.8H11.1233L17.1 13.86M14.94 11.7L17.602 9C18.5552 9.91494 18.8646 10.2219 19.8 11.1501L17.1 13.86M14.94 11.7L17.1 13.86" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </button>
+                                    </div>
                                     <div class="change-amount">
                                         <div class="minus">
                                             <button class="button-icon">
-                                                <svg class="minus-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg class="minus-icon"
+                                                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
                                                     <path d="M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -425,33 +435,13 @@
                                     <div class="delete">
                                         <button class="button-icon">
                                             <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.79883 9.7998L18.1988 18.1998M9.79883 18.1998L18.1988 9.7998" stroke="#939393" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <circle cx="14" cy="14" r="13.3" stroke="#939393" stroke-width="1.4"/>
-                                            </svg>
+                                                <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                            </svg>                                          
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="basket__items-mobile">
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change-section">
+                                <div class="item-change--mobile-link">
                                     <button class="triple-btn">
                                         <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
@@ -461,250 +451,71 @@
                                     </button>
                                     <p class="actual-amount-mobile">/ 7</p>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change-section">
-                                    <button class="triple-btn">
-                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
-                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
-                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
-                                        </svg>    
-                                    </button>
-                                    <p class="actual-amount-mobile">/ 7</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change-section">
-                                    <button class="triple-btn">
-                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
-                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
-                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
-                                        </svg>    
-                                    </button>
-                                    <p class="actual-amount-mobile">/ 7</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change-section">
-                                    <button class="triple-btn">
-                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
-                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
-                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
-                                        </svg>    
-                                    </button>
-                                    <p class="actual-amount-mobile">/ 7</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item inbasket">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                <div class="product-item__info">
-                                    <a class="product-item-link" href="#">
-                                        <p class="product-item__type">Парфюмерная вода</p>
-                                        <h6 class="product-item__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h6>
-                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur, adipisicing elit Mollitia aliquid</p>
-                                        <p class="product-item__volume">100 мл</p>
-                                    </a> 
-                                    <p class="product-item__amount">Осталось 3 шт.</p>
-                                </div>
-                                <div class="product-item__change-section">
-                                    <button class="triple-btn">
-                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
-                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
-                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
-                                        </svg>    
-                                    </button>
-                                    <p class="actual-amount-mobile">/ 7</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <div class="product-item__change-mobile-wrapper">
-                        <div class="product-item__change-mobile">
-                            <div class="delete-mobile">
-                                <button class="button-icon">
-                                    <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.79883 9.7998L18.1988 18.1998M9.79883 18.1998L18.1988 9.7998" stroke="#939393" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="14" cy="14" r="13.3" stroke="#939393" stroke-width="1.4"/>
-                                    </svg>Удалить
-                                </button>
-                            </div>
-                            <div class="divider--vertical"></div>
-                            <div class="change-amount">
-                                <div class="minus">
-                                    <button class="button-icon">
-                                        <svg class="minus-icon"
-                                        width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
-                                            <path d="M11 16H21" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>    
-                                    </button>
-                                </div>
-                                <p class="actual-amount">7</p>
-                                <div class="plus">
-                                    <button class="button-icon" disabled>
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
-                                            <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>    
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="basket__buttons">
-                        <div class="basket__buttons-inner">
-                            <a class="button" href="#">Оформить заказ</a>
-                            <a class="button secondary" href="#">Назад в каталог</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <main class="main">
-            <div class="breadcrumbs">
-                <div class="container">
-                  <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                      <a class="breadcrumbs__link" href="#">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <span class="breadcrumbs__link" href="#">Каталог продукции</span>
-                    </li>
-                    <li class="breadcrumbs__item">
-                      <span class="breadcrumbs__link" href="#">Весь ассортимент</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-        
-            <div class="catalogue">
-                <div class="container">
-                    <h2 class="section-title">Каталог продукции</h2>
-                    <div class="catalogue__info">
-                        <div class="dropdown-list opened">
-                            <div class="dropdown-list__main-category">
-                                <a class="menu__item-link">Весь ассортимент</a>
-                                <div class="dropdown-list__shevron">
-                                    <button class="shevron-down">
-                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L10 7L19 1" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg> 
-                                    </button>
-                                    <button class="shevron-up hide">
-                                        <svg class="icon--desktop" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <svg class="icon--mobile" width="20" height="8" viewBox="0 0 20 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 7L10 1L1 7" stroke="#C69C9C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                                
-                            </div>
-                            <div class="dropdown-list__wrapper">
-                                <ul class="dropdown-list__categories">
-                                    <li class="dropdown-list__category checked">
-                                        <a class="menu__item-link " href="#">Весь ассортимент</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы для женщин</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы для мужчин</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Ароматы унисекс</a>
-                                    </li>
-                                    <li class="dropdown-list__category">
-                                        <a class="menu__item-link" href="#">Косметика</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                        </div>
-                        
-                        <p class="catalogue__items-number">Позиций / 328</p>
-                    </div>
-                    <ul class="catalogue__items">
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
+                                <div class="item-change--mobile-wrapper">
+                                    <div class="item-change--mobile">
+                                        <div class="item-change__top">
+                                            <div class="edit-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="14" cy="14" r="13.25" stroke="#232323" stroke-width="1.5"/>
+                                                    <path d="M14.56 11.2L8.40002 17.2926V19.6H10.602L16.8 13.44M14.56 11.2L17.3206 8.40002C18.3091 9.34885 18.6299 9.66718 19.6 10.6297L16.8 13.44M14.56 11.2L16.8 13.44" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>Редактировать
+                                                </button>
+                                            </div>
+                                        </div>
+                                       <div class="item-change__bottom">
+                                            <div class="delete-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                        <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                                    </svg>
+                                                        Удалить
+                                                </button>
+                                            </div>
+                                            <div class="divider--vertical"></div>
+                                            <div class="change-amount">
+                                                <div class="minus">
+                                                    <button class="button-icon">
+                                                        <svg class="minus-icon"
+                                                        width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M11 16H21" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                                <p class="actual-amount">100</p>
+                                                <div class="plus">
+                                                    <button class="button-icon" disabled>
+                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
+                                </div>                    
+                            </div>
+                        </li>
+                        <li class="product-item inCatalogueSale">
+                            <div class="product-item__image">
+                                <a class="product-item-link" href="#">
+                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
+                                </a>
+                            </div>
+                            <div class="product-item__options">
+                                <div class="product-item__info">
+                                    <a class="product-item-link" href="#">
+                                        <p class="product-item__type">Духи</p>
+                                        <h6 class="product-item__title">Rochalur R12</h6>
+                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur adipisicing elit Mollitia aliquid</p>
+                                        <p class="product-item__volume">50 мл</p>
+                                    </a> 
+                                    <p class="product-item__amount">Осталось 3 шт.</p>
+                                </div>
                                 <div class="product-item__tobasket">
                                     <button class="tobasket-button">
                                         <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -715,23 +526,119 @@
                                         </svg>                                    
                                     </button>
                                 </div>
+                                <div class="item-change--desktop">
+                                    <div class="edit">
+                                        <button class="button-icon">
+                                            <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" fill="#F5F5F5" fill-opacity="0.4" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M14.94 11.7L9 17.575L9 19.8H11.1233L17.1 13.86M14.94 11.7L17.602 9C18.5552 9.91494 18.8646 10.2219 19.8 11.1501L17.1 13.86M14.94 11.7L17.1 13.86" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </button>
+                                    </div>
+                                    <div class="change-amount">
+                                        <div class="minus">
+                                            <button class="button-icon">
+                                                <svg class="minus-icon"
+                                                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
+                                                    <path d="M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <p class="actual-amount">3</p>
+                                        <div class="plus">
+                                            <button class="button-icon" disabled>
+                                                <svg class="plus-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
+                                                    <path d="M20 15V25M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="delete">
+                                        <button class="button-icon">
+                                            <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                            </svg>                                          
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="item-change--mobile-link">
+                                    <button class="triple-btn">
+                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
+                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
+                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
+                                        </svg>    
+                                    </button>
+                                    <p class="actual-amount-mobile">/ 7</p>
+                                </div>
+                                <div class="item-change--mobile-wrapper">
+                                    <div class="item-change--mobile">
+                                        <div class="item-change__top">
+                                            <div class="edit-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="14" cy="14" r="13.25" stroke="#232323" stroke-width="1.5"/>
+                                                    <path d="M14.56 11.2L8.40002 17.2926V19.6H10.602L16.8 13.44M14.56 11.2L17.3206 8.40002C18.3091 9.34885 18.6299 9.66718 19.6 10.6297L16.8 13.44M14.56 11.2L16.8 13.44" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>Редактировать
+                                                </button>
+                                            </div>
+                                        </div>
+                                       <div class="item-change__bottom">
+                                            <div class="delete-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                        <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                                    </svg>
+                                                        Удалить
+                                                </button>
+                                            </div>
+                                            <div class="divider--vertical"></div>
+                                            <div class="change-amount">
+                                                <div class="minus">
+                                                    <button class="button-icon">
+                                                        <svg class="minus-icon"
+                                                        width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M11 16H21" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                                <p class="actual-amount">100</p>
+                                                <div class="plus">
+                                                    <button class="button-icon" disabled>
+                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>                    
                             </div>
                         </li>
-                        <li class="product-item">
+                        <li class="product-item inCatalogueSale">
                             <div class="product-item__image">
                                 <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
+                                    <img class="product-item__img" src="./images/product-test.jpg" alt="Изображение">
                                 </a>
                             </div>
                             <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
-                                    </div>
+                                <div class="product-item__info">
+                                    <a class="product-item-link" href="#">
+                                        <p class="product-item__type">Духи</p>
+                                        <h6 class="product-item__title">Rochalur R12</h6>
+                                        <p class="product-item__analogue">Lorem ipsum dolor sit amet consectetur adipisicing elit Mollitia aliquid</p>
+                                        <p class="product-item__volume">50 мл</p>
+                                    </a> 
+                                    <p class="product-item__amount">Осталось 3 шт.</p>
+                                </div>
                                 <div class="product-item__tobasket">
                                     <button class="tobasket-button">
                                         <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -742,87 +649,101 @@
                                         </svg>                                    
                                     </button>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
+                                <div class="item-change--desktop">
+                                    <div class="edit">
+                                        <button class="button-icon">
+                                            <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" fill="#F5F5F5" fill-opacity="0.4" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M14.94 11.7L9 17.575L9 19.8H11.1233L17.1 13.86M14.94 11.7L17.602 9C18.5552 9.91494 18.8646 10.2219 19.8 11.1501L17.1 13.86M14.94 11.7L17.1 13.86" stroke="#232323" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>    
+                                        </button>
                                     </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
+                                    <div class="change-amount">
+                                        <div class="minus">
+                                            <button class="button-icon">
+                                                <svg class="minus-icon"
+                                                width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
+                                                    <path d="M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <p class="actual-amount">3</p>
+                                        <div class="plus">
+                                            <button class="button-icon" disabled>
+                                                <svg class="plus-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="40" height="40" rx="20" fill="#E9E9E9"/>
+                                                    <path d="M20 15V25M15 20H25" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
                                     </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="product-item">
-                            <div class="product-item__image">
-                                <a class="product-item-link" href="#">
-                                    <img class="product-item__img" src="./images/variant.jpg" alt="Изображение">
-                                </a>
-                            </div>
-                            <div class="product-item__options">
-                                    <div class="product-item__info">
-                                        <a class="product-item-link" href="#">
-                                            <p class="product-item__type">Духи</p>
-                                            <h6 class="product-item__title">Rochalur R10</h6>
-                                            <p class="product-item__analogue">Bombshell Victoria’s Secret Bombshell</p>
-                                            <p class="product-item__volume">50 мл</p>
-                                        </a> 
+                                    <div class="delete">
+                                        <button class="button-icon">
+                                            <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                            </svg>                                          
+                                        </button>
                                     </div>
-                                <div class="product-item__tobasket">
-                                    <button class="tobasket-button">
-                                        <svg class="tobasket-button--desktop icon--desktop" width="24" height="26" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.05263 9C5.05263 6.14286 5.63158 1 12 1C18.0211 1 18.9474 6.14286 18.9474 9M23 7.71429V24C23 24.5523 22.5523 25 22 25H2C1.44772 25 1 24.5523 1 24V7.71429C1 7.162 1.44772 6.71429 2 6.71429H22C22.5523 6.71429 23 7.162 23 7.71429Z" stroke="#232323" stroke-width="1.8" stroke-linecap="round"/>
-                                        </svg>
-                                        <svg class="tobasket-button--mobile icon--mobile" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.31579 7.66667C4.31579 5.28571 4.78947 1 10 1C14.9263 1 15.6842 5.28571 15.6842 7.66667M19 6.7619V20C19 20.5523 18.5523 21 18 21H2C1.44772 21 1 20.5523 1 20V6.7619C1 6.20962 1.44772 5.7619 2 5.7619H18C18.5523 5.7619 19 6.20962 19 6.7619Z" stroke="#232323" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg>                                    
-                                    </button>
                                 </div>
+                                <div class="item-change--mobile-link">
+                                    <button class="triple-btn">
+                                        <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2" cy="16" r="2" transform="rotate(-90 2 16)" fill="#939393"/>
+                                            <circle cx="2" cy="9" r="2" transform="rotate(-90 2 9)" fill="#939393"/>
+                                            <circle opacity="0.8" cx="2" cy="2" r="2" transform="rotate(-90 2 2)" fill="#939393"/>
+                                        </svg>    
+                                    </button>
+                                    <p class="actual-amount-mobile">/ 7</p>
+                                </div>
+                                <div class="item-change--mobile-wrapper">
+                                    <div class="item-change--mobile">
+                                        <div class="item-change__top">
+                                            <div class="edit-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="edit-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="14" cy="14" r="13.25" stroke="#232323" stroke-width="1.5"/>
+                                                    <path d="M14.56 11.2L8.40002 17.2926V19.6H10.602L16.8 13.44M14.56 11.2L17.3206 8.40002C18.3091 9.34885 18.6299 9.66718 19.6 10.6297L16.8 13.44M14.56 11.2L16.8 13.44" stroke="#232323" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>Редактировать
+                                                </button>
+                                            </div>
+                                        </div>
+                                       <div class="item-change__bottom">
+                                            <div class="delete-mobile">
+                                                <button class="button-icon">
+                                                    <svg class="delete-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle cx="14" cy="14" r="13.3" stroke="#232323" stroke-width="1.4"/>
+                                                        <path d="M9.28571 9.93548V13.2903C9.28571 14.5852 9.28571 16.2258 9.28571 17.4839C9.28571 18.7419 10.1429 20 11.8571 20C13.5714 20 14.4286 20 16.1429 20C17.8571 20 18.7143 18.7419 18.7143 17.4839C18.7143 16.2258 18.7143 14.5852 18.7143 13.2903C18.7143 12.8446 18.7143 11.4554 18.7143 9.93548M8 9.51613H14H16.5714M20 9.51613H16.5714M11.4286 9.09677V8.25806C11.4286 7.41935 11.8571 7 12.7143 7C13.5714 7 14.4286 7 15.2857 7C16.1429 7 16.5714 7.41935 16.5714 8.25806C16.5714 9.09677 16.5714 9.51613 16.5714 9.51613" stroke="#232323" stroke-width="1.4" stroke-linecap="round"/>
+                                                    </svg>
+                                                        Удалить
+                                                </button>
+                                            </div>
+                                            <div class="divider--vertical"></div>
+                                            <div class="change-amount">
+                                                <div class="minus">
+                                                    <button class="button-icon">
+                                                        <svg class="minus-icon"
+                                                        width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M11 16H21" stroke="#232323" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                                <p class="actual-amount">100</p>
+                                                <div class="plus">
+                                                    <button class="button-icon" disabled>
+                                                        <svg class="plus-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="32" height="32" rx="16" fill="#E9E9E9"/>
+                                                            <path d="M16 11V21M11 16H21" stroke="#D1D1D1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>    
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>                    
                             </div>
                         </li>
                     </ul>
